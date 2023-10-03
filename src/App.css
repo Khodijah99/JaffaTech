@@ -1,0 +1,22 @@
+.image-layer {
+  background-image: url(/assets/images/backgrounds/office.jpg);
+}
+.services-two {
+  background-image: url(assets/images/backgrounds/bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.why-choose-one__points-img img {
+  width: 280px;
+  height: 200px;
+}
+.cta-one-bg {
+  background-image: url(assets/images/backgrounds/cta-one-bg.jpg);
+}
+.site-footer-bg-1 {
+  background-image: url(assets/images/shapes/site-footer-shape-1.png);
+}
+.site-footer-bg-2 {
+  background-image: url(assets/images/shapes/site-footer-shape-2.png);
+}
