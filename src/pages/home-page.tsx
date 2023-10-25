@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "../components/slider";
-import TopHeader from "../components/top-header";
+import Header from "../components/header";
 import DeliveringIT from "../components/deliveringIT";
 import CompanyIntro from "../components/company-intro";
 import Services from "../components/services";
 import OurProject from "../components/project";
 import Footer from "../components/footer";
 import OurPartners from "../components/partners";
-import Mobilewrap from "../components/mobile-wrapper";
+import MobileNav from "../components/mobile-navigation";
+import SearchPopup from "../components/SearchPopup";
 import StyleSwitcher from "../components/style-switcher";
 
-function Homepage() {
+function Homepage({ setDarkMode }) {
+  const [searchPopup, setSearchPopup] = useState<Boolean>(false);
+  const [mobileNav, setMobileNav] = useState<Boolean>(false);
   return (
     <div>
-      <StyleSwitcher />
+      <StyleSwitcher setDarkMode={setDarkMode} />
       <div className="page-wrapper">
-        <TopHeader />
+        <Header
+          setSearchPopup={setSearchPopup}
+          searchPopup={searchPopup}
+          setMobileNav={setMobileNav}
+        />
         <Slider />
         <DeliveringIT />
         <CompanyIntro />
@@ -23,14 +30,11 @@ function Homepage() {
         <OurProject />
         <OurPartners />
         <Footer />
-        <Mobilewrap />
-        <a
-          href="#"
-          data-target="html"
-          className="scroll-to-target scroll-to-top"
-        >
-          <i className="fa fa-angle-up"></i>
-        </a>
+        <MobileNav setMobileNav={setMobileNav} mobileNav={mobileNav} />
+        <SearchPopup
+          setSearchPopup={setSearchPopup}
+          searchPopup={searchPopup}
+        />
       </div>
     </div>
   );

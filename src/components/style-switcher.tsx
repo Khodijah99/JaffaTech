@@ -1,22 +1,42 @@
-import React from "react";
-function StyleSwitcher() {
+import React, { useState } from "react";
+
+function StyleSwitcher({ setDarkMode }) {
+  const [onSwitcher, setOnSwitcher] = useState(false);
+  const onDarkModeHandler = () => {
+    setDarkMode(true);
+  };
+  const offDarkModeHandler = () => {
+    setDarkMode(false);
+  };
+  const switcherToggler = () => {
+    setOnSwitcher((prev) => !prev);
+  };
   return (
     <div>
       {/* <!-- style switcher --> */}
 
-      <div className="style-switcher">
-        <a href="#" id="switcher-toggler">
+      <div className={`style-switcher ${onSwitcher ? "active" : ""}`}>
+        <span id="switcher-toggler" onClick={switcherToggler}>
           <i className="fa fa-cog"></i>
-        </a>
+        </span>
+
         <h3>Layout Options</h3>
         <div className="layout-feature" id="colorMode">
-          <a href="" className="dark-switcher" data-theme="notech-dark">
+          <span
+            className="dark-switcher span"
+            data-theme="notech-dark"
+            onClick={onDarkModeHandler}
+          >
             Dark
-          </a>
-          <a href="" className="light-switcher" data-theme="notech-light">
+          </span>
+          <span
+            className="light-switcher"
+            data-theme="notech-light"
+            onClick={offDarkModeHandler}
+          >
             Light
-          </a>
-          <button className="boxed-switcher">Boxed</button>
+          </span>
+
           {/* <!-- /.ltr-switcher --> */}
         </div>
         {/* <!-- /.language-feature --> */}
@@ -25,4 +45,5 @@ function StyleSwitcher() {
     </div>
   );
 }
+
 export default StyleSwitcher;

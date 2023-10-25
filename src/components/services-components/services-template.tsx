@@ -20,14 +20,14 @@ function ServiceTemplate() {
 
             <li>
               <NavLink to="/outsource">
-                Software Development Outsourcing{" "}
+                Software Development Outsourcing
                 <span className="fa fa-long-arrow-alt-right"></span>
               </NavLink>
             </li>
 
             <li>
               <NavLink to="/disaster-recovery">
-                IT Disaster Recovery Services{" "}
+                IT Disaster Recovery Services
                 <span className="fa fa-long-arrow-alt-right"></span>
               </NavLink>
             </li>
@@ -58,7 +58,6 @@ function ServiceTemplate() {
           <div className="service-details__need-help-contact">
             <p>Have any question?</p>
             <a href="tel:980009850">
-              {" "}
               <span>Free</span> +234 8087717597
             </a>
           </div>

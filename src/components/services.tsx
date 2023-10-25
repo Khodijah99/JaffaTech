@@ -169,9 +169,6 @@ function Services() {
                       <li data-tab="#vision" className="tab-btn">
                         <span>Our vision</span>
                       </li>
-                      <li data-tab="#history" className="tab-btn">
-                        <span>Our history</span>
-                      </li>
                     </ul>
                     <div className="tabs-content">
                       {/* <!--tab--> */}
@@ -192,24 +189,6 @@ function Services() {
                         <div className="why-choose-one__tab-content">
                           <p className="why-choose-one__tab-text">
                             To be a leading golbal provider of IT Services.
-                          </p>
-                        </div>
-                      </div>
-                      {/* <!--tab--> */}
-                      <div className="tab " id="history">
-                        <div className="why-choose-one__tab-content">
-                          <p className="why-choose-one__tab-text">
-                            Established in 2008, Jaffa Technologies is a
-                            reputable IT solutions firm dedicated to providing
-                            full cycle software development and outsourcing,
-                            integrated systems engineering and IT Disaster
-                            recovery services. Our services span across business
-                            applications, system integration, payment systems,
-                            process automation, process optimization, and
-                            surveillance systems. Our clients span a number of
-                            industries, including government, education,
-                            financial institutions, telecommunication providers,
-                            Small and Medium Businesses (SMBs) and enterprise
                           </p>
                         </div>
                       </div>

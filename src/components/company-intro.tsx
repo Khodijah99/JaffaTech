@@ -63,7 +63,7 @@ function CompanyIntro() {
                   </div>
                   <div className="trusted-company__person-content">
                     <h2 className="trusted-company__person-name">
-                      Kevin Martin
+                      AbdulHakeem
                     </h2>
                     <p className="trusted-company__person-text">
                       Founder of JaffaTech company

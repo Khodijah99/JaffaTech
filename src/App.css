@@ -1,5 +1,5 @@
-.image-layer {
-  background-image: url(/assets/images/backgrounds/office.jpg);
+.highlight {
+  color: var(--notech-primary);
 }
 .services-two {
   background-image: url(assets/images/backgrounds/bg4.jpg);

@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ReactWOW from "react-wow";
+import "animate.css";
 const bgImage = "assets/images/backgrounds/office.jpg";
 function AboutUs() {
   return (
@@ -50,16 +52,22 @@ function AboutUs() {
               </div>
               <div className="col-xl-6 col-lg-6">
                 <div className="we-help__right">
-                  <div
-                    className="we-help__img wow slideInRight"
+                  <ReactWOW
+                    animation="slideInRight"
                     data-wow-delay="100ms"
                     data-wow-duration="2500ms"
                   >
-                    <img
-                      src="assets/images/resources/jaffatech_bg.png"
-                      alt=""
-                    />
-                  </div>
+                    <div
+                      className="we-help__img wow animated"
+                      data-wow-delay="100ms"
+                      data-wow-duration="2500ms"
+                    >
+                      <img
+                        src="assets/images/resources/jaffatech_bg.png"
+                        alt=""
+                      />
+                    </div>
+                  </ReactWOW>
                 </div>
               </div>
             </div>
@@ -119,7 +127,6 @@ function AboutUs() {
                   both productivity and visibility.
                 </p>
                 <p>
-                  {" "}
                   More importantly, any deviations or misinterpretations of
                   client's requirements are flagged early and corrected thereby
                   reducing risk and ensuring timely software delivery. We
@@ -130,13 +137,15 @@ function AboutUs() {
             </div>
             <div className="col-xl-6">
               <div className="notech-more__right">
-                <div
-                  className="notech-more__img wow slideInRight"
+                <ReactWOW
+                  animation="slideInRight"
                   data-wow-delay="100ms"
                   data-wow-duration="2500ms"
                 >
-                  <img src="assets/images/resources/agile.webp" alt="" />
-                </div>
+                  <div className="notech-more__img wow slideInRight">
+                    <img src="assets/images/resources/agile.webp" alt="" />
+                  </div>
+                </ReactWOW>
               </div>
             </div>
           </div>
@@ -247,13 +256,15 @@ function AboutUs() {
             </div>
             <div className="col-xl-6">
               <div className="notech-more__right">
-                <div
-                  className="notech-more__img wow slideInRight"
+                <ReactWOW
+                  animation="slideInRight"
                   data-wow-delay="100ms"
                   data-wow-duration="2500ms"
                 >
-                  <img src="assets/images/resources/IP_Lock.jpg" alt="" />
-                </div>
+                  <div className="notech-more__img ">
+                    <img src="assets/images/resources/IP_Lock.jpg" alt="" />
+                  </div>
+                </ReactWOW>
               </div>
             </div>
           </div>

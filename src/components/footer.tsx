@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <div>
@@ -79,13 +80,13 @@ function Footer() {
                   <h3 className="footer-widget__title">Links</h3>
                   <ul className="footer-widget__links-list list-unstyled clearfix">
                     <li>
-                      <a href="about.html">About us</a>
+                      <NavLink to="/about">About us</NavLink>
                     </li>
                     <li>
-                      <a href="projects-page-1.html">Our projects</a>
+                      <NavLink to="/">Our projects</NavLink>
                     </li>
                     <li>
-                      <a href="contact.html">Contacts</a>
+                      <NavLink to="/contact">Contacts</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -103,7 +104,7 @@ function Footer() {
                       </div>
                       <div className="text">
                         <p>
-                          <a href="tel:980009850">+234 8087717597</a>
+                          <a href="tel:+234 8087717597">+234 8087717597</a>
                         </p>
                       </div>
                     </li>

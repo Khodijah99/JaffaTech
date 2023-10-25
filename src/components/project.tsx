@@ -1,4 +1,8 @@
 import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+
 function OurProject() {
   return (
     <div>
@@ -10,9 +14,7 @@ function OurProject() {
             <h2 className="cta-one__title">
               Always delivering quality solutions
             </h2>
-            <p className="cta-one__text">
-              Lorem ipsum is are many variations of pass.
-            </p>
+            <p className="cta-one__text"></p>
             <a href="about.html" className="thm-btn cta-one__btn">
               Discover more
             </a>
@@ -60,32 +62,34 @@ function OurProject() {
         </div>
         <div className="project-two__bottom">
           <div className="project-two__container">
-            <div
+            <OwlCarousel
+              items={4}
               className="owl-carousel owl-theme thm-owl__carousel project-two__carousel"
-              data-owl-options='{
-                        "loop": true,
-                        "autoplay": true,
-                        "margin": 30,
-                        "nav": false,
-                        "dots": true,
-                        "smartSpeed": 500,
-                        "autoplayTimeout": 10000,
-                        "navText": ["<span className=\"fa fa-angle-left\"></span>","<span className=\"fa fa-angle-right\"></span>"],
-                        "responsive": {
-                            "0": {
-                                "items": 1
-                            },
-                            "768": {
-                                "items": 2
-                            },
-                            "992": {
-                                "items": 3
-                            },
-                            "1200": {
-                                "items": 4
-                            }
-                        }
-                    }'
+              loop={true}
+              nav={false}
+              margin={30}
+              autoplay={true}
+              dots={true}
+              smartSpeed={500}
+              autoplayTimeout={10000}
+              navText={[
+                '<span className="fa fa-angle-left"></span>',
+                '<span className="fa fa-angle-right"></span>',
+              ]}
+              responsive={{
+                "0": {
+                  items: 1,
+                },
+                "768": {
+                  items: 2,
+                },
+                "992": {
+                  items: 3,
+                },
+                "1200": {
+                  items: 4,
+                },
+              }}
             >
               <div className="project-two__single">
                 <div className="project-two__img">
@@ -279,7 +283,7 @@ function OurProject() {
                   </div>
                 </div>
               </div>
-            </div>
+            </OwlCarousel>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
+function Header({ setSearchPopup, searchPopup, setMobileNav }) {
   const onSearchPopupHandler = () => {
     setSearchPopup(true);
   };
@@ -22,10 +22,12 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
       }
     });
   }, []);
+  //To display responsive menu => Add class Expanded.
+  const [expand, setExpand] = useState<Boolean>(false);
 
   return (
     <div>
-      <header className="main-header clearfix">
+      <header className="main-header main-header-two clearfix">
         <div className="main-header__top">
           <div className="main-header__top-inner clearfix">
             <div className="main-header__top-left">
@@ -44,9 +46,8 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
                   </div>
                   <div className="text">
                     <p>
-                      <a href="mailto:needhelp@company.com">
-                        info "at" jaffatech.com
-                      </a>
+                      {" "}
+                      <span>info "at" jaffatech.com</span>
                     </p>
                   </div>
                 </li>
@@ -69,7 +70,7 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
             </div>
           </div>
         </div>
-        <nav className="main-menu clearfix">
+        <nav className="main-menu main-menu-two clearfix">
           <div className="main-menu__wrapper clearfix">
             <div className="main-menu__left main-menu__left--two">
               <div className="main-menu__logo">
@@ -121,7 +122,6 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
                       </li>
                     </ul>
                   </li>
-
                   <li>
                     <NavLink to="/contact"> Contact </NavLink>
                   </li>
@@ -140,9 +140,9 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
                   <div className="main-menu__call-number">
                     <p>Have any question?</p>
                     <h5>
-                      <a href="tel:926668880000">
+                      <span>
                         <span>Free</span> +234 8087717597
-                      </a>
+                      </span>
                     </h5>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
                   className="main-menu__search-box"
                   onClick={onSearchPopupHandler}
                 >
-                  <span className="main-menu__search search-toggler icon-magnifying-glass"></span>
+                  <span className="main-menu__search  search-toggler icon-magnifying-glass"></span>
                 </div>
               </div>
             </div>
@@ -159,7 +159,7 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
       </header>
 
       <div
-        className={`stricky-header stricked-menu main-menu ${
+        className={`stricky-header stricked-menu main-menu main-menu-two ${
           isSticky ? "stricky-fixed" : " "
         }`}
       >
@@ -251,7 +251,8 @@ function MainHeader({ setSearchPopup, searchPopup, setMobileNav }) {
         </div>
         {/* <!-- /.sticky-header__content --> */}
       </div>
+      {/* <!-- /.stricky-header --></div> */}
     </div>
   );
 }
-export default MainHeader;
+export default Header;

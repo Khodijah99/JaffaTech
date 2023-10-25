@@ -37,26 +37,12 @@ function TopHeader() {
                     <NavLink to="/about">About </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/projects"> Projects </NavLink>
+                    <NavLink to="/softwaredev"> Services </NavLink>
                   </li>
                   <li>
                     <NavLink to="/contact"> Contact </NavLink>
                   </li>
                 </ul>
-                <div className="main-header__top-right-social">
-                  <NavLink to="/">
-                    <i className="fab fa-twitter"></i>
-                  </NavLink>
-                  <NavLink to="/">
-                    <i className="fab fa-facebook"></i>
-                  </NavLink>
-                  <NavLink to="/">
-                    <i className="fab fa-pinterest-p"></i>
-                  </NavLink>
-                  <NavLink to="/">
-                    <i className="fab fa-instagram"></i>
-                  </NavLink>
-                </div>
               </div>
             </div>
           </div>
@@ -92,8 +78,23 @@ function TopHeader() {
                   <li>
                     <NavLink to="/softwaredev"> Services </NavLink>
                   </li>
-                  <li>
-                    <NavLink to="/projects"> Projects </NavLink>
+                  <li className="dropdown">
+                    <NavLink to="/products"> Products </NavLink>
+
+                    <ul>
+                      <li>
+                        <NavLink to="/products"> Smart Bills </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/products"> WaterBoard </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/products">Another Products </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/products">Other Products </NavLink>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <NavLink to="/contact"> Contact </NavLink>
@@ -129,11 +130,93 @@ function TopHeader() {
           </div>
         </nav>
       </header>
-      <div className="stricky-header stricked-menu main-menu main-menu-two">
-        <div className="sticky-header__content"></div>
+
+      <div className="stricky-header stricked-menu main-menu main-menu-two stricky-fixed">
+        <div className="sticky-header__content">
+          <div className="main-menu__wrapper clearfix">
+            <div className="main-menu__left main-menu__left--two">
+              <div className="main-menu__logo">
+                <NavLink to="/">
+                  <img
+                    className="logo-dark"
+                    src="assets/images/resources/logo.png"
+                    alt="logo1"
+                  />
+                  <img
+                    className="logo-light"
+                    src="assets/images/resources/logo.png"
+                    alt="logo2"
+                  />
+                </NavLink>
+              </div>
+              <div className="main-menu__main-menu-box main-menu__main-menu-box--two">
+                <a href="#" className="mobile-nav__toggler">
+                  <i className="fa fa-bars"></i>
+                </a>
+                <ul className="main-menu__list">
+                  <li className=" current ">
+                    <NavLink to="/"> Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/about"> About Us </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/softwaredev"> Services </NavLink>
+                  </li>
+                  <li className="dropdown">
+                    <NavLink to="/products"> Products </NavLink>
+
+                    <ul>
+                      <li>
+                        <NavLink to="/products"> Smart Bills </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/products"> WaterBoard </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/products">Another Products </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/products">Other Products </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <NavLink to="/contact"> Contact </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="main-menu__right">
+              <div className="main-menu__search-call">
+                <div className="main-menu__call">
+                  <div className="main-menu__call-icon">
+                    <img
+                      src="assets/images/icon/main-menu-icon-comment.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="main-menu__call-number">
+                    <p>Have any question?</p>
+                    <h5>
+                      <a href="tel:234 8087717597">
+                        <span>Free</span> +234 8087717597
+                      </a>
+                    </h5>
+                  </div>
+                </div>
+                <div className="main-menu__search-box">
+                  <a
+                    href="#"
+                    className="main-menu__search search-toggler icon-magnifying-glass"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* <!-- /.sticky-header__content --> */}
       </div>
-      {/* <!-- /.stricky-header --> */}
     </div>
   );
 }

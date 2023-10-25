@@ -1,0 +1,73 @@
+:root {
+  --notech-font: "Kumbh Sans", sans-serif;
+  --notech-reey-font: "reeyregular";
+  --notech-gray: #777181;
+  --notech-gray-rgb: 119, 113, 129;
+  --notech-white: #ffffff;
+  --notech-white-rgb: 255, 255, 255;
+  --notech-black: #1b1525;
+  --notech-black-rgb: 27, 21, 37;
+  --notech-base: #6653e8;
+  --notech-base-rgb: 102, 83, 232;
+  --notech-primary: #2be4ac;
+  --notech-primary-rgb: 43, 228, 172;
+  --notech-extra: #f7f7f9;
+  --notech-extra-rgb: 247, 247, 249;
+  --notech-bdr-color: #e9e9ee;
+  --notech-bdr-color-rgb: 233, 233, 238;
+}
+/* .w-10 {
+  width: 10%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-90 {
+  width: 90% !important;
+}
+.on-switcher {
+  left: 200px !important;
+}
+.welcome-three__img {
+  top: -100px;
+}
+.welcome-three__img img {
+  width: 400px;
+} */
+.we-stand__progress .bar-inner {
+  background-color: var(--notech-primary) !important;
+}
+
+/* Dark mode css  */
+.dark {
+  background-color: var(--notech-black);
+}
+.dark .main-menu,
+.dark .main-header__top {
+  background-color: var(--notech-black);
+  color: var(--notech-gray) !important;
+}
+.dark .main-menu a,
+.dark .main-menu__search {
+  color: var(--notech-white) !important;
+}
+
+.dark .section-title__title,
+.dark .why-choose-one__tab-box .tab-buttons .tab-btn span,
+.dark .welcome-three__icon-text,
+.dark .why-choose-one__points li .text p,
+.dark .we-stand__progress-title,
+.dark .we-stand__progress .count-text,
+.dark .service-details__content-title,
+.dark .trusted-company__points li .text p {
+  color: var(--notech-gray);
+}
+.dark .project-two::before {
+  background: var(--notech-black) !important;
+}
