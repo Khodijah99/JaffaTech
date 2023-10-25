@@ -61,6 +61,7 @@
   text-transform: uppercase;
   background-color: var(--toolbar-black);
   color: #fff;
+  cursor: pointer;
   letter-spacing: var(--toolbar-letter-spacing);
   font-size: 12px;
   font-weight: 700;
@@ -72,6 +73,7 @@
 .style-switcher .language-feature button.rtl-switcher {
   background-color: var(--toolbar-primary);
   color: #fff;
+  cursor: pointer;
 }
 
 .style-switcher .layout-feature button:last-child {

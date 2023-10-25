@@ -2,6 +2,7 @@
   --notech-font: "Kumbh Sans", sans-serif;
   --notech-reey-font: "reeyregular";
   --notech-gray: #777181;
+  --notech-lightgray: #beccd6;
   --notech-gray-rgb: 119, 113, 129;
   --notech-white: #ffffff;
   --notech-white-rgb: 255, 255, 255;
@@ -15,6 +16,9 @@
   --notech-extra-rgb: 247, 247, 249;
   --notech-bdr-color: #e9e9ee;
   --notech-bdr-color-rgb: 233, 233, 238;
+}
+.dark p {
+  color: var(--notech-lightgray) !important;
 }
 /* .w-10 {
   width: 10%;
@@ -48,14 +52,45 @@
 .dark {
   background-color: var(--notech-black);
 }
-.dark .main-menu,
+.dark .main-header-two,
+.dark .main-header .main-header-two .main-menu .main-menu-two {
+  background-color: transparent !important;
+}
+.dark .main-menu .main-menu__list li ul,
+.dark .stricky-header .main-menu__list li ul,
+.dark .stricky-header.main-menu,
+.dark .main-header,
 .dark .main-header__top {
   background-color: var(--notech-black);
-  color: var(--notech-gray) !important;
+  color: var(--notech-extra) !important;
+}
+.dark .main-header__top-inner {
+  border-bottom: 1px solid rgba(var(--notech-white-rgb), 0.1);
 }
 .dark .main-menu a,
+.dark .main-header__top-address li .text p a,
+.dark .main-header__top a,
 .dark .main-menu__search {
-  color: var(--notech-white) !important;
+  color: var(--notech-extra) !important;
+}
+
+.dark .main-header__top-address li .text p a:hover,
+.dark .main-header__top a:hover,
+.dark .main-menu__search:hover {
+  color: var(--notech-primary) !important;
+}
+.dark .main-menu .main-menu__list > li > a.active,
+.dark .stricky-header .main-menu__list > li > a.active,
+.dark .main-menu .main-menu__list > li > a:hover,
+.dark .stricky-header .main-menu__list > li > a:hover {
+  border-bottom: 2px solid var(--notech-primary);
+}
+.dark .main-header__top-address li .icon span {
+  color: var(--notech-primary);
+}
+.dark .main-menu-two .main-menu__search-box::before,
+.dark .main-menu__search-box::before {
+  background-color: rgba(var(--notech-white-rgb), 0.1);
 }
 
 .dark .section-title__title,
@@ -65,9 +100,16 @@
 .dark .we-stand__progress-title,
 .dark .we-stand__progress .count-text,
 .dark .service-details__content-title,
+.dark .faq-one-accrodion .accrodion-title h4,
 .dark .trusted-company__points li .text p {
-  color: var(--notech-gray);
+  color: var(--notech-extra);
 }
 .dark .project-two::before {
   background: var(--notech-black) !important;
+}
+.dark .service-details__faq {
+  border: 1px solid var(--notech-bdr-color);
+}
+.dark .faq-one-accrodion .accrodion {
+  border-bottom: 1px solid var(--notech-gray);
 }
